@@ -148,6 +148,7 @@
       <description locale="en_US">Reviews JS</description>
       <description locale="ru_RU">Скрипты отзывов</description>
     </file>
+    <file path="drymixshop.css" custom="1" modified="1" parent="1"><description locale="ru_RU"></description></file>
   </files>
   <settings>
     <setting var="divider_storefront" control_type="group_divider">
@@ -186,7 +187,7 @@
       <description locale="en_US">Products from this slider promo product set will be shown in the storefront slider if it is setup that way in the setting above.</description>
     </setting>
     <setting var="homepage_promocards_below_the_slider" control_type="checkbox">
-      <value></value>
+      <value/>
       <name locale="en_US">Display smaller promo cards below the slider</name>
       <name locale="ru_RU">Показывать маленькие промо-карточки под слайдером</name>
     </setting>

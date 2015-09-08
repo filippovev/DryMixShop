@@ -276,7 +276,7 @@ table.lined tr.service td { padding-top: 5px; padding-bottom: 5px; padding-left:
 header.globalheader { background: #c22; position: relative; }
 header a { text-decoration: none; }
 
-header #globalnav { background: #000; }
+header #globalnav { background: #28282e;border-bottom:1px #494c52 solid;}
 header h2 { float: left; padding: 11px 15px 9px; margin: 0 20px 0 -15px; font-size: 1.3em; }
 header h2 a { color: #eee !important; }
 header h2 a span { display: none; }
@@ -496,7 +496,7 @@ html.my .sidebar { display: none; }
 .color_scheme_green header.globalheader { background: #6fb541; }
 .color_scheme_blue header.globalheader { background: #4e81cc; }
 .color_scheme_purple header.globalheader { background: #9a81b3; }
-.color_scheme_gray header.globalheader { background: #9c9c9c; }
+.color_scheme_gray header.globalheader { background: #28282e; }
 .color_scheme_pink header.globalheader { background: #e871b1; }
 .color_scheme_cyan header.globalheader { background: #3ac1bf; }
 .color_scheme_lime header.globalheader { background: #b5ce10; }

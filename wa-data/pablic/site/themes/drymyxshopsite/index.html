@@ -28,6 +28,8 @@
        
     <!-- css -->
     <link href="{$wa_theme_url}default.css?v{$wa_theme_version}" rel="stylesheet" type="text/css"/>
+	<link href="{$wa_theme_url}font_awesom.css" rel="stylesheet" type="text/css"/>
+	<link href="{$wa_theme_url}drymixshop.css?v{$wa_theme_version}" rel="stylesheet" type="text/css"/>
     {if $wa->shop && $wa->shop->currency() == 'RUB'}<link href="{$wa_url}wa-content/font/ruble/arial/fontface.css" rel="stylesheet" type="text/css">{/if}
     {$wa->css()} {* links active plugins CSS *}
     
@@ -66,7 +68,7 @@
             <div id="globalnav" class="{if $theme_settings.header_scheme|strstr:'white'}light{/if}">
                 <div class="container">
                     
-                    <h2>
+                    <!--<h2>
                         <a href="{$wa_url}">
                             {if $theme_settings.logo}
                                 <img src="{$wa_theme_url}{$theme_settings.logo}?v{$wa_theme_version}" alt="{$wa->accountName()}" id="logo" />
@@ -75,8 +77,10 @@
                                 {$wa->accountName()}
                             {/if}
                         </a>
-                    </h2>
-        
+                    </h2>-->
+					<div class="phone"><i class="icon-phone"></i>{$wa->shop->settings('phone')}</div>
+					<div class="email"><a href="mailto:{$wa->shop->settings('email')}"><i class="icon-envelope-o"></i> {$wa->shop->settings('email')}</a></div>
+					
                     <button id="mobile-nav-toggle"><!-- nav toggle for mobile devices --></button>
                     
                     <nav>
@@ -120,7 +124,7 @@
                             </div>
                         {/if}
                         
-                        <!-- core site sections (apps) -->
+                        <!-- core site sections (apps) 
                         <ul class="apps">
                             {$_links = []}
                             {if $theme_settings.header_links == 'site-pages'}
@@ -141,7 +145,7 @@
                                     <li{if $a.url==$wa_app_url && !$wa->globals('isMyAccount') || strlen($a.url)>1 && $wa->currentUrl()|strstr:$a.url} class="selected"{/if}><a href="{$a.url}">{$a.name}</a></li>
                                 {/if}
                             {/foreach}
-                        </ul>
+                        </ul>-->
                         
                     </nav>
                     <div class="clear-both"></div>
